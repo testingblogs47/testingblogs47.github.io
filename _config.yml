@@ -1,0 +1,29 @@
+title:              Rajat's Testing Blog
+email:              testingblogs47@gmail.com
+description:        Blog by Rajat on Current Testing Trends
+author:             Rajat Manga
+baseurl:            ""
+url:                "https://testingblogs47.github.io"
+
+# Social Profiles
+twitter_username:   testingblogs47
+github_username:    testingblogs47
+facebook_username:  testingblogs47
+instagram_username:  
+linkedin_username:
+
+# format for code-snippets
+markdown: kramdown
+highlighter: rouge
+input: GFM
+# Add your google-analytics ID here to activate google analytics
+google_analytics:   UA-XXXXXXXXX-X # out your google-analytics code
+
+# Build settings
+markdown:           kramdown
+paginate:           5
+paginate_path:      "/posts/page:num/"
+plugins:
+  - jekyll-feed
+  - jekyll-paginate
+  - jekyll-sitemap ## Uncomment this line to silently generate a sitemaps.org compliant sitemap for your Jekyll site
