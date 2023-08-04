@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <title>
+    What is Cypress.io? - Rajat&#39;s Testing Blog
+    
+  </title>
+
+  <meta name="description" content="What and why Cypress.io? Cypress.io is an open-source framework for end-to-end testing of web applications. It provides a simple and intuitive way to write t...">
+
+  <link href='https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+
+  <script src="https://use.fontawesome.com/releases/v5.15.3/js/all.js" crossorigin="anonymous"></script>
+
+  <link rel="stylesheet" href="/assets/main.css">
+  <link rel="canonical" href="http://localhost:4000/2023/08/01/Cypress.html">
+  <link rel="alternate" type="application/rss+xml" title="Rajat&#39;s Testing Blog" href="/feed.xml">
+
+</head>
+
+
+<body>
+
+  <!-- Navigation -->
+<nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+  <div class="container">
+    <a class="navbar-brand" href="/">Rajat&#39;s Testing Blog</a>
+    <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+      Menu
+      <i class="fa fa-bars"></i>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarResponsive">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="/">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/about">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/posts">Posts</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/contact">Contact</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+  <!-- Page Header -->
+
+<header class="masthead" style="background-image: url('/img/posts/01.jpg')">
+  
+    <div class="overlay"></div>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          <div class="post-heading">
+            <h1>What is Cypress.io?</h1>
+            
+            <h2 class="subheading">Cypress.io is an open-source framework for end-to-end testing of web applications.</h2>
+            
+            <span class="meta">Posted by
+              <a href="#">Rajat Manga</a>
+              on August 01, 2023 &middot; <span class="reading-time" title="Estimated read time">
+  
+   5 mins  read </span>
+
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-md-10 mx-auto">
+
+        <h2 class="section-heading">What and why Cypress.io?</h2>
+<p>Cypress.io is an open-source framework for end-to-end testing of web applications. It provides a simple and intuitive way to write tests in JavaScript, allowing developers to easily automate testing tasks and ensure the quality of their web applications.</p>
+
+<h2 class="section-heading">Some key features of Cypress.io:</h2>
+<ol>
+
+<li>Batteries included: Cypress is a comprehensive testing tool that comes bundled with everything you need to write, run, and debug tests. It includes a powerful test runner, built-in assertions, and an API to interact with web elements.</li>
+
+<li>Easy setup and use: Cypress can be easily installed as a dev dependency in your project using npm. Once installed, you can start writing tests right away with its intuitive API and documentation.</li>
+
+<li>Real-time reloading: Cypress offers real-time reloading, which means that as you make changes to your test files or application code, Cypress automatically reloads and reruns the tests, giving you immediate feedback on the impact of your changes.</li>
+
+<li>Time-travel: Cypress provides a time-travel feature that allows you to see what happens at each step of your test as it runs. You can also rewind and debug each command to identify any issues or errors.</li>
+
+<li>Automatic waiting and retries: Cypress automatically waits for DOM elements to be available and resolves network requests, eliminating the need for explicit waits or timeouts. It also automatically retries flaky commands, making your test more reliable.</li>
+
+<li>Debugging support: Cypress provides a built-in debugger that allows you to pause your test at any point and inspect the application's state. You can also use the browser's developer tools alongside Cypress to debug your tests.</li>
+
+<li>Cross-browser testing: Cypress supports running tests on different browsers, including Chrome, Firefox, and Edge. You can run tests in multiple browsers simultaneously and review the test results for each browser.</li>
+
+<li>CI/CD integration: Cypress integrates well with continuous integration and deployment (CI/CD) pipelines, allowing you to run tests automatically on each commit or deployment. You can generate reports, capture screenshots, and record videos of test runs to aid in debugging and analysis.</li>
+</ol>  
+</p>Cypress.io has gained popularity among developers due to its clear and concise syntax, fast test execution, and rich set of features. It helps teams ensure the quality of their web applications by catching bugs early and providing robust end-to-end testing capabilities.</p>
+
+
+<h2 class="section-heading">Steps to start testing with Cypress.io:</h2>
+<ol>
+<li>Install Cypress: First, make sure that you have Node.js installed on your machine. Then, open your project directory in the terminal and run the following command</li>
+<br>
+<figure class="highlight"><pre><code class="language-shell" data-lang="shell"><span class="nv">$ </span>npm <span class="nb">install </span>cypress <span class="nt">--save-dev</span></code></pre></figure>
+
+This will install Cypress as a dev dependency in your project.
+
+<li>Set up Cypress: Once the installation is complete, run the following command to set up Cypress:</li>
+
+<figure class="highlight"><pre><code class="language-shell" data-lang="shell"><span class="nv">$ </span>npx cypress open</code></pre></figure>
+<br>
+This command will create the necessary configuration files and open the Cypress Test Runner.
+
+<li> Write your first test: In the Cypress Test Runner, you will see a list of example tests. You can start by modifying or deleting the examples, or you can create a new test file. Cypress uses JavaScript to write tests, so you can create a new JavaScript file in the `cypress/integration` directory, for example `myTest.spec.js`. Open this file and write your first test. Here's an example:</li>
+<br>
+<figure class="highlight"><pre><code class="language-javascript" data-lang="javascript"><span class="nf">describe</span><span class="p">(</span><span class="dl">'</span><span class="s1">My First Test</span><span class="dl">'</span><span class="p">,</span> <span class="p">()</span> <span class="o">=&gt;</span> <span class="p">{</span>
+  <span class="nf">it</span><span class="p">(</span><span class="dl">'</span><span class="s1">Visits the website</span><span class="dl">'</span><span class="p">,</span> <span class="p">()</span> <span class="o">=&gt;</span> <span class="p">{</span>
+    <span class="nx">cy</span><span class="p">.</span><span class="nf">visit</span><span class="p">(</span><span class="dl">'</span><span class="s1">https://www.example.com</span><span class="dl">'</span><span class="p">)</span>
+    <span class="nx">cy</span><span class="p">.</span><span class="nf">contains</span><span class="p">(</span><span class="dl">'</span><span class="s1">Welcome to Example</span><span class="dl">'</span><span class="p">).</span><span class="nf">should</span><span class="p">(</span><span class="dl">'</span><span class="s1">be.visible</span><span class="dl">'</span><span class="p">)</span>
+  <span class="p">})</span>
+<span class="p">})</span></code></pre></figure>
+
+In this example, we visit the example website and assert that the text "Welcome to Example" is visible on the page.
+
+<li>Run your test: With your test file written, go back to the Cypress Test Runner and click on the test file's name. Your test will run in an automatically opened browser window. You can view the test execution and assert results in real-time.</li>
+
+<li>Explore Cypress features: Cypress provides a powerful set of features for testing. You can interact with elements, perform actions, and make assertions using Cypress commands. Explore the official Cypress documentation to learn about its various features and capabilities.</li>
+
+<li>Write additional tests: Once you get familiar with Cypress, continue writing more tests to cover different scenarios and functionalities in your application. Cypress supports various browsers, running tests in parallel, and organizing tests into different files or folders.</li>
+</ol>
+<p>Wiht these steps, you can get started with testing using Cypress.io. The built-in Test Runner and intuitive API make it easy to write and execute tests, making it a popular choice for web application testing.</p>
+
+
+
+        <hr>
+
+        <div class="clearfix">
+
+          
+          
+
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+
+  <!-- Footer -->
+
+<hr>
+
+<footer>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-md-10 mx-auto">
+        <ul class="list-inline text-center">
+          
+          <li class="list-inline-item">
+            <a href="mailto:testingblogs47@gmail.com">
+              <span class="fa-stack fa-lg">
+                <i class="fas fa-circle fa-stack-2x"></i>
+                <i class="far fa-envelope fa-stack-1x fa-inverse"></i>
+              </span>
+            </a>
+          </li>
+          
+          
+          <li class="list-inline-item">
+            <a href="https://twitter.com/testingblogs47">
+              <span class="fa-stack fa-lg">
+                <i class="fas fa-circle fa-stack-2x"></i>
+                <i class="fab fa-twitter fa-stack-1x fa-inverse"></i>
+              </span>
+            </a>
+          </li>
+          
+          
+          <li class="list-inline-item">
+            <a href="https://www.facebook.com/testingblogs47">
+              <span class="fa-stack fa-lg">
+                <i class="fas fa-circle fa-stack-2x"></i>
+                <i class="fab fa-facebook-f fa-stack-1x fa-inverse"></i>
+              </span>
+            </a>
+          </li>
+          
+          
+          
+          <li class="list-inline-item">
+            <a href="https://github.com/testingblogs47">
+              <span class="fa-stack fa-lg">
+                <i class="fas fa-circle fa-stack-2x"></i>
+                <i class="fab fa-github fa-stack-1x fa-inverse"></i>
+              </span>
+            </a>
+          </li>
+          
+          
+        </ul>
+        <p class="copyright text-muted">Copyright &copy; Rajat Manga 2023</p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="/assets/vendor/startbootstrap-clean-blog/js/scripts.js"></script>
+
+<script src="/assets/scripts.js"></script>
+
+
+
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-XXXXXXXXX-X"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-XXXXXXXXX-X');
+</script>
+
+
+
+</body>
+
+</html>
