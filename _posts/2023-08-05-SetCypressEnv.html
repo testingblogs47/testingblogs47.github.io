@@ -6,50 +6,55 @@ date: 2023-08-03 23:45:13 -0400
 ---
 
 <h2 class="section-heading">Cypress Environment Setup</h2>
-<img src="https://github.com/testingblogs47/testingblogs47.github.io/tree/main/img/01.png" alt="Image"height="100px" width="100px">
+
 <p>To set up the environment for Cypress.io follow these steps</p>
 <ol>
-<li>Make sure you have Node.js installed on your machine. Cypress.io requires Node.js 12 or later. You can download and install Node.js from the official <a href=https://nodejs.org>website</a></li>
+<li><p>Make sure you have Node.js installed on your machine. Cypress.io requires Node.js 12 or later. You can download and install Node.js from the official <a href=https://nodejs.org>website</a></p></li>
+<br>
+<img class="img-fluid" src="../../../img/posts/01.png" height="250px" width="250px" alt="Image">
+<br>
+<img class="img-fluid" src="../../../img/posts/02.jpg" height="250px" width="250px" alt="Image">
+<br>
+<li><p>Once folder was created we need to configure our Environment variable as follows</p>
 
-<li>Once folder was created we need to configure our Environment variable as follows</li>
-
-Define variable name as NODE_HOME and paste node.js path in variable value as below: 
+<img class="img-fluid" src="../../../img/posts/03.jpg" height="250px" width="250px" alt="Image">
+<p>Define variable name as NODE_HOME and paste node.js path in variable value as below</p></li>
+<br>
+<img class="img-fluid" src="../../../img/posts/04.jpg" height="250px" width="250px" alt="Image">
+<br>
+<img class="img-fluid" src="../../../img/posts/05.jpg" height="250px" width="250px" alt="Image">
+<br>
+<img class="img-fluid" src="../../../img/posts/06.jpg" height="250px" width="250px" alt="Image">
+<br>
 
 <li>Download JavaScript editor to write a code, here we are using Visual Studio, anybody can download visual studio from this <a href=https://code.visualstudio.com>link</a></li>
-
+<br>
 <li>Create a new project directory or navigate to your existing project directory using the command line.</li>
 
-<li>Initialize a new Node.js project by running the following command in your project directory:
+<li><p>Initialize a new Node.js project by running the following command in your project directory
 
-<br>
 {% highlight shell %}
 npm init –y
 {% endhighlight %}
-<br>
-This will create a `package.json` file in your project directory.</li>
+This will create a `package.json` file in your project directory.</p></li>
+<li><p>Install Cypress as a dev dependency by running the following command in your project directory
 
-<li>Install Cypress as a dev dependency by running the following command in your project directory:
-
-<br>
 {% highlight shell %}
 npm install cypress --save-dev
 {% endhighlight %}
 
-This will download and install Cypress locally in your project.</li>
-<br>
-<li>Once the installation is complete, you can open the Cypress Test Runner by running the following command in your project directory
+This will download and install Cypress locally in your project.</p></li>
 
-<br>
+<li><p>Once the installation is complete, you can open the Cypress Test Runner by running the following command in your project directory
 {% highlight shell %}
 npx cypress open
 {% endhighlight %}
-This command will open the Cypress Test Runner window.</li>
-<br>
+This command will open the Cypress Test Runner window.</p></li>
 
 <li>The first time you run Cypress, it will create a `cypress` folder with some example tests and configurations.</li>
-
+<br>
 <li>You can now start writing your tests in the `cypress/integration` folder. Cypress tests are written in JavaScript and have a `.spec.js` extension.</li>
-
+<br>
 <li>To run your tests, click on any spec file in the Cypress Test Runner window, and it will open a new browser window where your tests will run.</li>
 </ol>
 <p>That's it! You have now set up the environment for Cypress.io and can start writing and running your tests.</p>
